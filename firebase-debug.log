@@ -1,0 +1,236 @@
+[debug] [2020-04-14T07:57:05.128Z] ----------------------------------------------------------------------
+[debug] [2020-04-14T07:57:05.130Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-04-14T07:57:05.130Z] CLI Version:   8.0.3
+[debug] [2020-04-14T07:57:05.130Z] Platform:      darwin
+[debug] [2020-04-14T07:57:05.130Z] Node Version:  v12.13.1
+[debug] [2020-04-14T07:57:05.131Z] Time:          Tue Apr 14 2020 00:57:05 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-04-14T07:57:05.131Z] ----------------------------------------------------------------------
+[debug] [2020-04-14T07:57:05.132Z] 
+[debug] [2020-04-14T07:57:05.142Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-14T07:57:05.143Z] > authorizing via signed-in user
+[debug] [2020-04-14T07:57:05.143Z] [iam] checking project opsystem-e3df8 for permissions ["firebase.projects.get"]
+[debug] [2020-04-14T07:57:05.145Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/opsystem-e3df8:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-14T07:57:05.305Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 14 Apr 2020 07:57:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=45","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-14T07:57:05.306Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/opsystem-e3df8  
+ 
+[debug] [2020-04-14T07:57:05.559Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 14 Apr 2020 07:57:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions" for Cloud Functions...
+[debug] [2020-04-14T07:57:05.592Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-14T07:57:05.592Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-14T07:57:05.593Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-14T07:57:05.593Z] [worker-~diagnostic~-9047be06-d03f-408b-90ff-c4ee21beb1ad]: Assigning socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6920.sock 
+[debug] [2020-04-14T07:57:05.593Z] [worker-~diagnostic~-9047be06-d03f-408b-90ff-c4ee21beb1ad]: BUSY 
+[debug] [2020-04-14T07:57:05.945Z] [runtime-status] [6920] Functions runtime initialized. {"cwd":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions","node_version":"12.13.1"} 
+[debug] [2020-04-14T07:57:05.946Z] [runtime-status] [6920] Disabled runtime features: undefined 
+[debug] [2020-04-14T07:57:05.952Z] [runtime-status] [6920] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:57:05.953Z] [runtime-status] [6920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:05.955Z] [runtime-status] [6920] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-14T07:57:06.008Z] [runtime-status] [6920] Checked functions.config() {"config":{}} 
+[debug] [2020-04-14T07:57:06.009Z] [runtime-status] [6920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:06.010Z] [runtime-status] [6920] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:57:06.010Z] [runtime-status] [6920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:06.010Z] [runtime-status] [6920] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-14T07:57:06.206Z] [runtime-status] [6920] initializeApp(DEFAULT) {"databaseURL":"https://opsystem-e3df8.firebaseio.com","storageBucket":"opsystem-e3df8.appspot.com","projectId":"opsystem-e3df8","credential":{"implicit":false,"projectId":"opsystem-e3df8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9v60Yzt7OoXWH\nPNir7CtC8a/q6GtspesM9rWvsIoNMo+otDd08cDMaPmlG9pzdyM0lA+NDZkZnE9K\nq9ARVU5myOcA+zLlIInqW944iAc88jhph5gYojrtgTtDGoehZhtGEswFWAouf9Go\n9MyVdEGhclNJF4hnF86z8CHVrUZsaksiK4VQVMYEfdnNALL72sUvxHcof/7XYw1m\nQpvg1HPyXvyW/FAZMK/Cv2JHDu4PRiEyWcmB6eFSGD9f2ob2wmph3qnOiZYpAMkS\nAsj0sQe7WeZFhMbpvM5+0FDZ3rhpZ0UmOopJCjyE0SoBslRXVIYZwMg4accn8dmQ\no2F0cyhVAgMBAAECggEALDUdyj+aO+h0lhk4PtfTXXGrI27aZlICoP7SphfalggP\nXcX8/Kc9XLJhZVUHsGqTnnKXa+y83HFlLNe6LmuiTEKmxT0BJs5Nq3cTXzbb/thN\nCdMgPa8ATSjUaoYiDtmX5ZvIAj+4gYxgh71e87wF9WwKGOedbS1oCFacP2jzFRtI\n5BPYEjoGzyVNbBnpa+Ynh7/DqUFdU9OqctMHZeXVlLk+H/mJX42LxN9wh8x1+k/w\nfztdCHLY+DFm882nFxCVlrw3FOWgDIUMe7LSWk+/37D4cqA6TlrLghDwzAsczqkY\nyYgg8IixqcA75wdYcujTyubzVSynGX0Wb2BEIC/kIQKBgQDhZlJB7EtNVv6wXAT2\n4FJqzjU6Vam+xiLL9tyTYqDXM2EFDVMbKOiTeUij7hsbC2IvHt+PXTogxibBQGU7\nrBXZouQPsXZ4Zo7zPbQkBYG0y4LVez49ghV28SjuGfEq1i84aEfqzi5GREoE9qWM\nHp2oZdWmZXPdZQtU6bw/5Fiq4QKBgQDXglHV3BcaDev/vbVlTaiHWY+u84W3XmfB\nqv6hwTMuUGV0gXSSVnpHNcF7FvtDjM4fkYhmCDx10qlS8kAXoqb0W4IGuCrngGAj\nb63nuYbh+aFJEqk1FxLC+RSVIwbI2hIUSN7LC1pXv7S72wXiF4EMDsVVM8Pdi3OG\nFxyoSxJ/9QKBgDKyxivHz4Q83hqjCAbTnBYj/br6S6z6ehcwlpqcI5tkFh2BysCg\nKfgJ3rnos7YYkGQS6KwhhxKaH1t2dY6/fUavqeaRvxkD0IGLznoPtwYIhIwqJWzG\nVrejNNahhSpidMqWQh7hc20grRmCtOfYdxPKnAzKYw5YTP0zecFRRlRhAoGBALHm\nbk+wQ5HKdErE+/0IQlqY4Dd356YbVGNXGKPGrM1KqLWoN+alZINsKK/HpNt6XJ1K\nseIoYmCQ6h4CxE2+gzusXoXVefVoz/PwuQpU6LeaLj34HZ4p0d8JZqhGJc+f1NTR\n4riSQp21Lyj0AMNGy8x8VQGkncdA2riSU6HJdxgRAoGAaUqIeVR4M4WPYI7Aqj6H\naoNHwwqV7sl9cZwd2FQ+/78Hof0xzlAQiaDQAymBzcUyRHBVy6B0tdBpRCYvGN/n\n239tblcFCQwVyewnKrGQu9nGtrr1TZQg1Op+97Zt9A4XAUcEKp3+Hqjg7SBsjQuN\nFlqP5q9Id7iBvd+GaA1TuO8=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-gliue@opsystem-e3df8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/opsystem-e3df8/us-central1/api).
+[debug] [2020-04-14T07:57:06.788Z] [worker-~diagnostic~-9047be06-d03f-408b-90ff-c4ee21beb1ad]: IDLE 
+[debug] [2020-04-14T07:57:10.515Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T07:57:10.515Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T07:57:10.515Z] Accepted request POST /opsystem-e3df8/us-central1/api/signup --> api
+[debug] [2020-04-14T07:57:10.520Z] [worker-pool] addWorker(api) 
+[debug] [2020-04-14T07:57:10.520Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-04-14T07:57:10.520Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-14T07:57:10.521Z] [worker-api-fc16ec61-44c1-4dd6-9917-c0987fdbbee2]: Assigning socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6921.sock 
+[debug] [2020-04-14T07:57:10.521Z] [worker-api-fc16ec61-44c1-4dd6-9917-c0987fdbbee2]: BUSY 
+[debug] [2020-04-14T07:57:10.761Z] [runtime-status] [6921] Functions runtime initialized. {"cwd":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions","node_version":"12.13.1"} 
+[debug] [2020-04-14T07:57:10.764Z] [runtime-status] [6921] Disabled runtime features: undefined 
+[debug] [2020-04-14T07:57:10.765Z] [runtime-status] [6921] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:57:10.766Z] [runtime-status] [6921] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:10.768Z] [runtime-status] [6921] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-14T07:57:10.797Z] [runtime-status] [6921] Checked functions.config() {"config":{}} 
+[debug] [2020-04-14T07:57:10.797Z] [runtime-status] [6921] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:10.798Z] [runtime-status] [6921] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:57:10.798Z] [runtime-status] [6921] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:10.798Z] [runtime-status] [6921] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-14T07:57:10.886Z] [runtime-status] [6921] initializeApp(DEFAULT) {"databaseURL":"https://opsystem-e3df8.firebaseio.com","storageBucket":"opsystem-e3df8.appspot.com","projectId":"opsystem-e3df8","credential":{"implicit":false,"projectId":"opsystem-e3df8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9v60Yzt7OoXWH\nPNir7CtC8a/q6GtspesM9rWvsIoNMo+otDd08cDMaPmlG9pzdyM0lA+NDZkZnE9K\nq9ARVU5myOcA+zLlIInqW944iAc88jhph5gYojrtgTtDGoehZhtGEswFWAouf9Go\n9MyVdEGhclNJF4hnF86z8CHVrUZsaksiK4VQVMYEfdnNALL72sUvxHcof/7XYw1m\nQpvg1HPyXvyW/FAZMK/Cv2JHDu4PRiEyWcmB6eFSGD9f2ob2wmph3qnOiZYpAMkS\nAsj0sQe7WeZFhMbpvM5+0FDZ3rhpZ0UmOopJCjyE0SoBslRXVIYZwMg4accn8dmQ\no2F0cyhVAgMBAAECggEALDUdyj+aO+h0lhk4PtfTXXGrI27aZlICoP7SphfalggP\nXcX8/Kc9XLJhZVUHsGqTnnKXa+y83HFlLNe6LmuiTEKmxT0BJs5Nq3cTXzbb/thN\nCdMgPa8ATSjUaoYiDtmX5ZvIAj+4gYxgh71e87wF9WwKGOedbS1oCFacP2jzFRtI\n5BPYEjoGzyVNbBnpa+Ynh7/DqUFdU9OqctMHZeXVlLk+H/mJX42LxN9wh8x1+k/w\nfztdCHLY+DFm882nFxCVlrw3FOWgDIUMe7LSWk+/37D4cqA6TlrLghDwzAsczqkY\nyYgg8IixqcA75wdYcujTyubzVSynGX0Wb2BEIC/kIQKBgQDhZlJB7EtNVv6wXAT2\n4FJqzjU6Vam+xiLL9tyTYqDXM2EFDVMbKOiTeUij7hsbC2IvHt+PXTogxibBQGU7\nrBXZouQPsXZ4Zo7zPbQkBYG0y4LVez49ghV28SjuGfEq1i84aEfqzi5GREoE9qWM\nHp2oZdWmZXPdZQtU6bw/5Fiq4QKBgQDXglHV3BcaDev/vbVlTaiHWY+u84W3XmfB\nqv6hwTMuUGV0gXSSVnpHNcF7FvtDjM4fkYhmCDx10qlS8kAXoqb0W4IGuCrngGAj\nb63nuYbh+aFJEqk1FxLC+RSVIwbI2hIUSN7LC1pXv7S72wXiF4EMDsVVM8Pdi3OG\nFxyoSxJ/9QKBgDKyxivHz4Q83hqjCAbTnBYj/br6S6z6ehcwlpqcI5tkFh2BysCg\nKfgJ3rnos7YYkGQS6KwhhxKaH1t2dY6/fUavqeaRvxkD0IGLznoPtwYIhIwqJWzG\nVrejNNahhSpidMqWQh7hc20grRmCtOfYdxPKnAzKYw5YTP0zecFRRlRhAoGBALHm\nbk+wQ5HKdErE+/0IQlqY4Dd356YbVGNXGKPGrM1KqLWoN+alZINsKK/HpNt6XJ1K\nseIoYmCQ6h4CxE2+gzusXoXVefVoz/PwuQpU6LeaLj34HZ4p0d8JZqhGJc+f1NTR\n4riSQp21Lyj0AMNGy8x8VQGkncdA2riSU6HJdxgRAoGAaUqIeVR4M4WPYI7Aqj6H\naoNHwwqV7sl9cZwd2FQ+/78Hof0xzlAQiaDQAymBzcUyRHBVy6B0tdBpRCYvGN/n\n239tblcFCQwVyewnKrGQu9nGtrr1TZQg1Op+97Zt9A4XAUcEKp3+Hqjg7SBsjQuN\nFlqP5q9Id7iBvd+GaA1TuO8=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-gliue@opsystem-e3df8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-04-14T07:57:11.142Z] [runtime-status] [6921] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-14T07:57:11.142Z] [runtime-status] [6921] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-14T07:57:11.142Z] [runtime-status] [6921] Running api in mode HTTPS 
+[debug] [2020-04-14T07:57:11.149Z] [runtime-status] [6921] Attempting to listen to socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6921.sock 
+[debug] [2020-04-14T07:57:11.149Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-14T07:57:11.175Z] [runtime-status] [6921] Ephemeral server handling POST request 
+[debug] [2020-04-14T07:57:11.178Z] [runtime-status] [6921] Ephemeral server survived. 
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] >  [u [Error]: {"error":{"code":400,"message":"API key not valid. Please pass a valid API key.","errors":[{"message":"API key not valid. Please pass a valid API key.","domain":"global","reason":"badRequest"}],"status":"INVALID_ARGUMENT"}}] { {"user":"[u [Error]: {\"error\":{\"code\":400,\"message\":\"API key not valid. Please pass a valid API key.\",\"errors\":[{\"message\":\"API key not valid. Please pass a valid API key.\",\"domain\":\"global\",\"reason\":\"badRequest\"}],\"status\":\"INVALID_ARGUMENT\"}}] {"}
+[info] >    code: 'auth/internal-error', {"user":"  code: 'auth/internal-error',"}
+[info] >    message: '{"error":{"code":400,"message":"API key not valid. Please pass a valid API key.","errors":[{"message":"API key not valid. Please pass a valid API key.","domain":"global","reason":"badRequest"}],"status":"INVALID_ARGUMENT"}}', {"user":"  message: '{\"error\":{\"code\":400,\"message\":\"API key not valid. Please pass a valid API key.\",\"errors\":[{\"message\":\"API key not valid. Please pass a valid API key.\",\"domain\":\"global\",\"reason\":\"badRequest\"}],\"status\":\"INVALID_ARGUMENT\"}}',"}
+[info] >    a: null {"user":"  a: null"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-14T07:57:12.124Z] [worker-api-fc16ec61-44c1-4dd6-9917-c0987fdbbee2]: IDLE 
+[debug] [2020-04-14T07:57:12.124Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-14T07:57:26.817Z] File /Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/util/config.js changed, reloading triggers 
+[debug] [2020-04-14T07:57:27.820Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-14T07:57:27.820Z] [worker-~diagnostic~-9047be06-d03f-408b-90ff-c4ee21beb1ad]: FINISHING 
+[debug] [2020-04-14T07:57:27.821Z] [worker-pool] Shutting down IDLE worker (api) 
+[debug] [2020-04-14T07:57:27.821Z] [worker-api-fc16ec61-44c1-4dd6-9917-c0987fdbbee2]: FINISHING 
+[debug] [2020-04-14T07:57:27.837Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-14T07:57:27.837Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-14T07:57:27.838Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-14T07:57:27.838Z] [worker-~diagnostic~-a536d43f-5d04-4aab-baf9-b948b2ff9694]: Assigning socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6922.sock 
+[debug] [2020-04-14T07:57:27.838Z] [worker-~diagnostic~-a536d43f-5d04-4aab-baf9-b948b2ff9694]: BUSY 
+[debug] [2020-04-14T07:57:27.840Z] [worker-~diagnostic~-9047be06-d03f-408b-90ff-c4ee21beb1ad]: exited 
+[debug] [2020-04-14T07:57:27.840Z] [worker-~diagnostic~-9047be06-d03f-408b-90ff-c4ee21beb1ad]: FINISHED 
+[debug] [2020-04-14T07:57:27.840Z] [worker-api-fc16ec61-44c1-4dd6-9917-c0987fdbbee2]: exited 
+[debug] [2020-04-14T07:57:27.840Z] [worker-api-fc16ec61-44c1-4dd6-9917-c0987fdbbee2]: FINISHED 
+[debug] [2020-04-14T07:57:28.059Z] [runtime-status] [6922] Functions runtime initialized. {"cwd":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions","node_version":"12.13.1"} 
+[debug] [2020-04-14T07:57:28.061Z] [runtime-status] [6922] Disabled runtime features: undefined 
+[debug] [2020-04-14T07:57:28.063Z] [runtime-status] [6922] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:57:28.063Z] [runtime-status] [6922] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:28.065Z] [runtime-status] [6922] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-14T07:57:28.093Z] [runtime-status] [6922] Checked functions.config() {"config":{}} 
+[debug] [2020-04-14T07:57:28.094Z] [runtime-status] [6922] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:28.095Z] [runtime-status] [6922] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:57:28.095Z] [runtime-status] [6922] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:28.095Z] [runtime-status] [6922] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-14T07:57:28.169Z] [runtime-status] [6922] initializeApp(DEFAULT) {"databaseURL":"https://opsystem-e3df8.firebaseio.com","storageBucket":"opsystem-e3df8.appspot.com","projectId":"opsystem-e3df8","credential":{"implicit":false,"projectId":"opsystem-e3df8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9v60Yzt7OoXWH\nPNir7CtC8a/q6GtspesM9rWvsIoNMo+otDd08cDMaPmlG9pzdyM0lA+NDZkZnE9K\nq9ARVU5myOcA+zLlIInqW944iAc88jhph5gYojrtgTtDGoehZhtGEswFWAouf9Go\n9MyVdEGhclNJF4hnF86z8CHVrUZsaksiK4VQVMYEfdnNALL72sUvxHcof/7XYw1m\nQpvg1HPyXvyW/FAZMK/Cv2JHDu4PRiEyWcmB6eFSGD9f2ob2wmph3qnOiZYpAMkS\nAsj0sQe7WeZFhMbpvM5+0FDZ3rhpZ0UmOopJCjyE0SoBslRXVIYZwMg4accn8dmQ\no2F0cyhVAgMBAAECggEALDUdyj+aO+h0lhk4PtfTXXGrI27aZlICoP7SphfalggP\nXcX8/Kc9XLJhZVUHsGqTnnKXa+y83HFlLNe6LmuiTEKmxT0BJs5Nq3cTXzbb/thN\nCdMgPa8ATSjUaoYiDtmX5ZvIAj+4gYxgh71e87wF9WwKGOedbS1oCFacP2jzFRtI\n5BPYEjoGzyVNbBnpa+Ynh7/DqUFdU9OqctMHZeXVlLk+H/mJX42LxN9wh8x1+k/w\nfztdCHLY+DFm882nFxCVlrw3FOWgDIUMe7LSWk+/37D4cqA6TlrLghDwzAsczqkY\nyYgg8IixqcA75wdYcujTyubzVSynGX0Wb2BEIC/kIQKBgQDhZlJB7EtNVv6wXAT2\n4FJqzjU6Vam+xiLL9tyTYqDXM2EFDVMbKOiTeUij7hsbC2IvHt+PXTogxibBQGU7\nrBXZouQPsXZ4Zo7zPbQkBYG0y4LVez49ghV28SjuGfEq1i84aEfqzi5GREoE9qWM\nHp2oZdWmZXPdZQtU6bw/5Fiq4QKBgQDXglHV3BcaDev/vbVlTaiHWY+u84W3XmfB\nqv6hwTMuUGV0gXSSVnpHNcF7FvtDjM4fkYhmCDx10qlS8kAXoqb0W4IGuCrngGAj\nb63nuYbh+aFJEqk1FxLC+RSVIwbI2hIUSN7LC1pXv7S72wXiF4EMDsVVM8Pdi3OG\nFxyoSxJ/9QKBgDKyxivHz4Q83hqjCAbTnBYj/br6S6z6ehcwlpqcI5tkFh2BysCg\nKfgJ3rnos7YYkGQS6KwhhxKaH1t2dY6/fUavqeaRvxkD0IGLznoPtwYIhIwqJWzG\nVrejNNahhSpidMqWQh7hc20grRmCtOfYdxPKnAzKYw5YTP0zecFRRlRhAoGBALHm\nbk+wQ5HKdErE+/0IQlqY4Dd356YbVGNXGKPGrM1KqLWoN+alZINsKK/HpNt6XJ1K\nseIoYmCQ6h4CxE2+gzusXoXVefVoz/PwuQpU6LeaLj34HZ4p0d8JZqhGJc+f1NTR\n4riSQp21Lyj0AMNGy8x8VQGkncdA2riSU6HJdxgRAoGAaUqIeVR4M4WPYI7Aqj6H\naoNHwwqV7sl9cZwd2FQ+/78Hof0xzlAQiaDQAymBzcUyRHBVy6B0tdBpRCYvGN/n\n239tblcFCQwVyewnKrGQu9nGtrr1TZQg1Op+97Zt9A4XAUcEKp3+Hqjg7SBsjQuN\nFlqP5q9Id7iBvd+GaA1TuO8=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-gliue@opsystem-e3df8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-04-14T07:57:28.413Z] [worker-~diagnostic~-a536d43f-5d04-4aab-baf9-b948b2ff9694]: IDLE 
+[debug] [2020-04-14T07:57:33.231Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T07:57:33.232Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T07:57:33.232Z] Accepted request POST /opsystem-e3df8/us-central1/api/signup --> api
+[debug] [2020-04-14T07:57:33.232Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-14T07:57:33.232Z] [worker-pool] Cleaned up workers for api: 1 --> 0 
+[debug] [2020-04-14T07:57:33.236Z] [worker-pool] addWorker(api) 
+[debug] [2020-04-14T07:57:33.236Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-04-14T07:57:33.236Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-14T07:57:33.237Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: Assigning socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6923.sock 
+[debug] [2020-04-14T07:57:33.237Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: BUSY 
+[debug] [2020-04-14T07:57:33.497Z] [runtime-status] [6923] Functions runtime initialized. {"cwd":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions","node_version":"12.13.1"} 
+[debug] [2020-04-14T07:57:33.498Z] [runtime-status] [6923] Disabled runtime features: undefined 
+[debug] [2020-04-14T07:57:33.500Z] [runtime-status] [6923] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:57:33.501Z] [runtime-status] [6923] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:33.502Z] [runtime-status] [6923] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-14T07:57:33.530Z] [runtime-status] [6923] Checked functions.config() {"config":{}} 
+[debug] [2020-04-14T07:57:33.530Z] [runtime-status] [6923] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:33.531Z] [runtime-status] [6923] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:57:33.531Z] [runtime-status] [6923] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:57:33.532Z] [runtime-status] [6923] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-14T07:57:33.623Z] [runtime-status] [6923] initializeApp(DEFAULT) {"databaseURL":"https://opsystem-e3df8.firebaseio.com","storageBucket":"opsystem-e3df8.appspot.com","projectId":"opsystem-e3df8","credential":{"implicit":false,"projectId":"opsystem-e3df8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9v60Yzt7OoXWH\nPNir7CtC8a/q6GtspesM9rWvsIoNMo+otDd08cDMaPmlG9pzdyM0lA+NDZkZnE9K\nq9ARVU5myOcA+zLlIInqW944iAc88jhph5gYojrtgTtDGoehZhtGEswFWAouf9Go\n9MyVdEGhclNJF4hnF86z8CHVrUZsaksiK4VQVMYEfdnNALL72sUvxHcof/7XYw1m\nQpvg1HPyXvyW/FAZMK/Cv2JHDu4PRiEyWcmB6eFSGD9f2ob2wmph3qnOiZYpAMkS\nAsj0sQe7WeZFhMbpvM5+0FDZ3rhpZ0UmOopJCjyE0SoBslRXVIYZwMg4accn8dmQ\no2F0cyhVAgMBAAECggEALDUdyj+aO+h0lhk4PtfTXXGrI27aZlICoP7SphfalggP\nXcX8/Kc9XLJhZVUHsGqTnnKXa+y83HFlLNe6LmuiTEKmxT0BJs5Nq3cTXzbb/thN\nCdMgPa8ATSjUaoYiDtmX5ZvIAj+4gYxgh71e87wF9WwKGOedbS1oCFacP2jzFRtI\n5BPYEjoGzyVNbBnpa+Ynh7/DqUFdU9OqctMHZeXVlLk+H/mJX42LxN9wh8x1+k/w\nfztdCHLY+DFm882nFxCVlrw3FOWgDIUMe7LSWk+/37D4cqA6TlrLghDwzAsczqkY\nyYgg8IixqcA75wdYcujTyubzVSynGX0Wb2BEIC/kIQKBgQDhZlJB7EtNVv6wXAT2\n4FJqzjU6Vam+xiLL9tyTYqDXM2EFDVMbKOiTeUij7hsbC2IvHt+PXTogxibBQGU7\nrBXZouQPsXZ4Zo7zPbQkBYG0y4LVez49ghV28SjuGfEq1i84aEfqzi5GREoE9qWM\nHp2oZdWmZXPdZQtU6bw/5Fiq4QKBgQDXglHV3BcaDev/vbVlTaiHWY+u84W3XmfB\nqv6hwTMuUGV0gXSSVnpHNcF7FvtDjM4fkYhmCDx10qlS8kAXoqb0W4IGuCrngGAj\nb63nuYbh+aFJEqk1FxLC+RSVIwbI2hIUSN7LC1pXv7S72wXiF4EMDsVVM8Pdi3OG\nFxyoSxJ/9QKBgDKyxivHz4Q83hqjCAbTnBYj/br6S6z6ehcwlpqcI5tkFh2BysCg\nKfgJ3rnos7YYkGQS6KwhhxKaH1t2dY6/fUavqeaRvxkD0IGLznoPtwYIhIwqJWzG\nVrejNNahhSpidMqWQh7hc20grRmCtOfYdxPKnAzKYw5YTP0zecFRRlRhAoGBALHm\nbk+wQ5HKdErE+/0IQlqY4Dd356YbVGNXGKPGrM1KqLWoN+alZINsKK/HpNt6XJ1K\nseIoYmCQ6h4CxE2+gzusXoXVefVoz/PwuQpU6LeaLj34HZ4p0d8JZqhGJc+f1NTR\n4riSQp21Lyj0AMNGy8x8VQGkncdA2riSU6HJdxgRAoGAaUqIeVR4M4WPYI7Aqj6H\naoNHwwqV7sl9cZwd2FQ+/78Hof0xzlAQiaDQAymBzcUyRHBVy6B0tdBpRCYvGN/n\n239tblcFCQwVyewnKrGQu9nGtrr1TZQg1Op+97Zt9A4XAUcEKp3+Hqjg7SBsjQuN\nFlqP5q9Id7iBvd+GaA1TuO8=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-gliue@opsystem-e3df8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-04-14T07:57:33.966Z] [runtime-status] [6923] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-14T07:57:33.967Z] [runtime-status] [6923] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-14T07:57:33.968Z] [runtime-status] [6923] Running api in mode HTTPS 
+[debug] [2020-04-14T07:57:33.971Z] [runtime-status] [6923] Attempting to listen to socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6923.sock 
+[debug] [2020-04-14T07:57:33.983Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-14T07:57:34.028Z] [runtime-status] [6923] Ephemeral server handling POST request 
+[debug] [2020-04-14T07:57:34.034Z] [runtime-status] [6923] Ephemeral server survived. 
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~2s
+[debug] [2020-04-14T07:57:35.977Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: IDLE 
+[debug] [2020-04-14T07:57:35.977Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-14T07:58:00.860Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T07:58:00.860Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T07:58:00.860Z] Accepted request POST /opsystem-e3df8/us-central1/api/signup --> api
+[debug] [2020-04-14T07:58:00.860Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-14T07:58:00.860Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: Assigning socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6923.sock 
+[debug] [2020-04-14T07:58:00.860Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: BUSY 
+[debug] [2020-04-14T07:58:00.861Z] [runtime-status] [6923] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-14T07:58:00.861Z] [runtime-status] [6923] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-14T07:58:00.861Z] [runtime-status] [6923] Running api in mode HTTPS 
+[debug] [2020-04-14T07:58:00.861Z] [runtime-status] [6923] Attempting to listen to socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6923.sock 
+[debug] [2020-04-14T07:58:00.862Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-14T07:58:00.865Z] [runtime-status] [6923] Ephemeral server handling POST request 
+[debug] [2020-04-14T07:58:00.865Z] [runtime-status] [6923] Ephemeral server survived. 
+[info] >  TypeError: Cannot read property 'uid' of undefined {"user":"TypeError: Cannot read property 'uid' of undefined"}
+[info] >      at /Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/api/users.js:44:26 {"user":"    at /Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/api/users.js:44:26"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:93:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+[info] >  (node:6923) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"user":"(node:6923) UnhandledPromiseRejectionWarning: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
+[info] >      at ServerResponse.setHeader (_http_outgoing.js:485:11) {"user":"    at ServerResponse.setHeader (_http_outgoing.js:485:11)"}
+[info] >      at ServerResponse.header (/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/express/lib/response.js:771:10) {"user":"    at ServerResponse.header (/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/express/lib/response.js:771:10)"}
+[info] >      at ServerResponse.send (/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/express/lib/response.js:170:12) {"user":"    at ServerResponse.send (/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/express/lib/response.js:170:12)"}
+[info] >      at ServerResponse.json (/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/express/lib/response.js:267:15) {"user":"    at ServerResponse.json (/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/express/lib/response.js:267:15)"}
+[info] >      at /Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/api/users.js:69:25 {"user":"    at /Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/api/users.js:69:25"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:93:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+[info] >  (node:6923) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1) {"user":"(node:6923) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)"}
+[info] >  (node:6923) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code. {"user":"(node:6923) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code."}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-14T07:58:01.483Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: IDLE 
+[debug] [2020-04-14T07:58:01.484Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-14T07:58:11.123Z] File /Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/util/config.js changed, reloading triggers 
+[debug] [2020-04-14T07:58:12.125Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-14T07:58:12.125Z] [worker-~diagnostic~-a536d43f-5d04-4aab-baf9-b948b2ff9694]: FINISHING 
+[debug] [2020-04-14T07:58:12.125Z] [worker-pool] Shutting down IDLE worker (api) 
+[debug] [2020-04-14T07:58:12.126Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: FINISHING 
+[debug] [2020-04-14T07:58:12.142Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-14T07:58:12.142Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-14T07:58:12.143Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-14T07:58:12.143Z] [worker-~diagnostic~-0301ad94-771c-4b03-936a-8df20593fd63]: Assigning socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6924.sock 
+[debug] [2020-04-14T07:58:12.143Z] [worker-~diagnostic~-0301ad94-771c-4b03-936a-8df20593fd63]: BUSY 
+[debug] [2020-04-14T07:58:12.144Z] [worker-~diagnostic~-a536d43f-5d04-4aab-baf9-b948b2ff9694]: exited 
+[debug] [2020-04-14T07:58:12.144Z] [worker-~diagnostic~-a536d43f-5d04-4aab-baf9-b948b2ff9694]: FINISHED 
+[debug] [2020-04-14T07:58:12.144Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: exited 
+[debug] [2020-04-14T07:58:12.144Z] [worker-api-798872a1-f08a-4071-9f47-fa14dab509bc]: FINISHED 
+[debug] [2020-04-14T07:58:12.367Z] [runtime-status] [6924] Functions runtime initialized. {"cwd":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions","node_version":"12.13.1"} 
+[debug] [2020-04-14T07:58:12.368Z] [runtime-status] [6924] Disabled runtime features: undefined 
+[debug] [2020-04-14T07:58:12.370Z] [runtime-status] [6924] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:58:12.371Z] [runtime-status] [6924] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:58:12.372Z] [runtime-status] [6924] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-14T07:58:12.396Z] [runtime-status] [6924] Checked functions.config() {"config":{}} 
+[debug] [2020-04-14T07:58:12.396Z] [runtime-status] [6924] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:58:12.397Z] [runtime-status] [6924] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:58:12.397Z] [runtime-status] [6924] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:58:12.398Z] [runtime-status] [6924] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-14T07:58:12.470Z] [runtime-status] [6924] initializeApp(DEFAULT) {"databaseURL":"https://opsystem-e3df8.firebaseio.com","storageBucket":"opsystem-e3df8.appspot.com","projectId":"opsystem-e3df8","credential":{"implicit":false,"projectId":"opsystem-e3df8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9v60Yzt7OoXWH\nPNir7CtC8a/q6GtspesM9rWvsIoNMo+otDd08cDMaPmlG9pzdyM0lA+NDZkZnE9K\nq9ARVU5myOcA+zLlIInqW944iAc88jhph5gYojrtgTtDGoehZhtGEswFWAouf9Go\n9MyVdEGhclNJF4hnF86z8CHVrUZsaksiK4VQVMYEfdnNALL72sUvxHcof/7XYw1m\nQpvg1HPyXvyW/FAZMK/Cv2JHDu4PRiEyWcmB6eFSGD9f2ob2wmph3qnOiZYpAMkS\nAsj0sQe7WeZFhMbpvM5+0FDZ3rhpZ0UmOopJCjyE0SoBslRXVIYZwMg4accn8dmQ\no2F0cyhVAgMBAAECggEALDUdyj+aO+h0lhk4PtfTXXGrI27aZlICoP7SphfalggP\nXcX8/Kc9XLJhZVUHsGqTnnKXa+y83HFlLNe6LmuiTEKmxT0BJs5Nq3cTXzbb/thN\nCdMgPa8ATSjUaoYiDtmX5ZvIAj+4gYxgh71e87wF9WwKGOedbS1oCFacP2jzFRtI\n5BPYEjoGzyVNbBnpa+Ynh7/DqUFdU9OqctMHZeXVlLk+H/mJX42LxN9wh8x1+k/w\nfztdCHLY+DFm882nFxCVlrw3FOWgDIUMe7LSWk+/37D4cqA6TlrLghDwzAsczqkY\nyYgg8IixqcA75wdYcujTyubzVSynGX0Wb2BEIC/kIQKBgQDhZlJB7EtNVv6wXAT2\n4FJqzjU6Vam+xiLL9tyTYqDXM2EFDVMbKOiTeUij7hsbC2IvHt+PXTogxibBQGU7\nrBXZouQPsXZ4Zo7zPbQkBYG0y4LVez49ghV28SjuGfEq1i84aEfqzi5GREoE9qWM\nHp2oZdWmZXPdZQtU6bw/5Fiq4QKBgQDXglHV3BcaDev/vbVlTaiHWY+u84W3XmfB\nqv6hwTMuUGV0gXSSVnpHNcF7FvtDjM4fkYhmCDx10qlS8kAXoqb0W4IGuCrngGAj\nb63nuYbh+aFJEqk1FxLC+RSVIwbI2hIUSN7LC1pXv7S72wXiF4EMDsVVM8Pdi3OG\nFxyoSxJ/9QKBgDKyxivHz4Q83hqjCAbTnBYj/br6S6z6ehcwlpqcI5tkFh2BysCg\nKfgJ3rnos7YYkGQS6KwhhxKaH1t2dY6/fUavqeaRvxkD0IGLznoPtwYIhIwqJWzG\nVrejNNahhSpidMqWQh7hc20grRmCtOfYdxPKnAzKYw5YTP0zecFRRlRhAoGBALHm\nbk+wQ5HKdErE+/0IQlqY4Dd356YbVGNXGKPGrM1KqLWoN+alZINsKK/HpNt6XJ1K\nseIoYmCQ6h4CxE2+gzusXoXVefVoz/PwuQpU6LeaLj34HZ4p0d8JZqhGJc+f1NTR\n4riSQp21Lyj0AMNGy8x8VQGkncdA2riSU6HJdxgRAoGAaUqIeVR4M4WPYI7Aqj6H\naoNHwwqV7sl9cZwd2FQ+/78Hof0xzlAQiaDQAymBzcUyRHBVy6B0tdBpRCYvGN/n\n239tblcFCQwVyewnKrGQu9nGtrr1TZQg1Op+97Zt9A4XAUcEKp3+Hqjg7SBsjQuN\nFlqP5q9Id7iBvd+GaA1TuO8=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-gliue@opsystem-e3df8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-04-14T07:58:12.702Z] [worker-~diagnostic~-0301ad94-771c-4b03-936a-8df20593fd63]: IDLE 
+[debug] [2020-04-14T07:58:40.546Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T07:58:40.546Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T07:58:40.546Z] Accepted request POST /opsystem-e3df8/us-central1/api/signup --> api
+[debug] [2020-04-14T07:58:40.547Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-14T07:58:40.547Z] [worker-pool] Cleaned up workers for api: 1 --> 0 
+[debug] [2020-04-14T07:58:40.557Z] [worker-pool] addWorker(api) 
+[debug] [2020-04-14T07:58:40.557Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-04-14T07:58:40.557Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-14T07:58:40.557Z] [worker-api-a9aa71da-cd6c-4b78-87f6-12bae0c7e11a]: Assigning socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6925.sock 
+[debug] [2020-04-14T07:58:40.557Z] [worker-api-a9aa71da-cd6c-4b78-87f6-12bae0c7e11a]: BUSY 
+[debug] [2020-04-14T07:58:41.080Z] [runtime-status] [6925] Functions runtime initialized. {"cwd":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions","node_version":"12.13.1"} 
+[debug] [2020-04-14T07:58:41.081Z] [runtime-status] [6925] Disabled runtime features: undefined 
+[debug] [2020-04-14T07:58:41.084Z] [runtime-status] [6925] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:58:41.085Z] [runtime-status] [6925] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:58:41.087Z] [runtime-status] [6925] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-14T07:58:41.132Z] [runtime-status] [6925] Checked functions.config() {"config":{}} 
+[debug] [2020-04-14T07:58:41.132Z] [runtime-status] [6925] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:58:41.133Z] [runtime-status] [6925] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-14T07:58:41.134Z] [runtime-status] [6925] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-14T07:58:41.134Z] [runtime-status] [6925] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yehormelnyk/Desktop/OPSystem/OPSFirebase/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-14T07:58:41.322Z] [runtime-status] [6925] initializeApp(DEFAULT) {"databaseURL":"https://opsystem-e3df8.firebaseio.com","storageBucket":"opsystem-e3df8.appspot.com","projectId":"opsystem-e3df8","credential":{"implicit":false,"projectId":"opsystem-e3df8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9v60Yzt7OoXWH\nPNir7CtC8a/q6GtspesM9rWvsIoNMo+otDd08cDMaPmlG9pzdyM0lA+NDZkZnE9K\nq9ARVU5myOcA+zLlIInqW944iAc88jhph5gYojrtgTtDGoehZhtGEswFWAouf9Go\n9MyVdEGhclNJF4hnF86z8CHVrUZsaksiK4VQVMYEfdnNALL72sUvxHcof/7XYw1m\nQpvg1HPyXvyW/FAZMK/Cv2JHDu4PRiEyWcmB6eFSGD9f2ob2wmph3qnOiZYpAMkS\nAsj0sQe7WeZFhMbpvM5+0FDZ3rhpZ0UmOopJCjyE0SoBslRXVIYZwMg4accn8dmQ\no2F0cyhVAgMBAAECggEALDUdyj+aO+h0lhk4PtfTXXGrI27aZlICoP7SphfalggP\nXcX8/Kc9XLJhZVUHsGqTnnKXa+y83HFlLNe6LmuiTEKmxT0BJs5Nq3cTXzbb/thN\nCdMgPa8ATSjUaoYiDtmX5ZvIAj+4gYxgh71e87wF9WwKGOedbS1oCFacP2jzFRtI\n5BPYEjoGzyVNbBnpa+Ynh7/DqUFdU9OqctMHZeXVlLk+H/mJX42LxN9wh8x1+k/w\nfztdCHLY+DFm882nFxCVlrw3FOWgDIUMe7LSWk+/37D4cqA6TlrLghDwzAsczqkY\nyYgg8IixqcA75wdYcujTyubzVSynGX0Wb2BEIC/kIQKBgQDhZlJB7EtNVv6wXAT2\n4FJqzjU6Vam+xiLL9tyTYqDXM2EFDVMbKOiTeUij7hsbC2IvHt+PXTogxibBQGU7\nrBXZouQPsXZ4Zo7zPbQkBYG0y4LVez49ghV28SjuGfEq1i84aEfqzi5GREoE9qWM\nHp2oZdWmZXPdZQtU6bw/5Fiq4QKBgQDXglHV3BcaDev/vbVlTaiHWY+u84W3XmfB\nqv6hwTMuUGV0gXSSVnpHNcF7FvtDjM4fkYhmCDx10qlS8kAXoqb0W4IGuCrngGAj\nb63nuYbh+aFJEqk1FxLC+RSVIwbI2hIUSN7LC1pXv7S72wXiF4EMDsVVM8Pdi3OG\nFxyoSxJ/9QKBgDKyxivHz4Q83hqjCAbTnBYj/br6S6z6ehcwlpqcI5tkFh2BysCg\nKfgJ3rnos7YYkGQS6KwhhxKaH1t2dY6/fUavqeaRvxkD0IGLznoPtwYIhIwqJWzG\nVrejNNahhSpidMqWQh7hc20grRmCtOfYdxPKnAzKYw5YTP0zecFRRlRhAoGBALHm\nbk+wQ5HKdErE+/0IQlqY4Dd356YbVGNXGKPGrM1KqLWoN+alZINsKK/HpNt6XJ1K\nseIoYmCQ6h4CxE2+gzusXoXVefVoz/PwuQpU6LeaLj34HZ4p0d8JZqhGJc+f1NTR\n4riSQp21Lyj0AMNGy8x8VQGkncdA2riSU6HJdxgRAoGAaUqIeVR4M4WPYI7Aqj6H\naoNHwwqV7sl9cZwd2FQ+/78Hof0xzlAQiaDQAymBzcUyRHBVy6B0tdBpRCYvGN/n\n239tblcFCQwVyewnKrGQu9nGtrr1TZQg1Op+97Zt9A4XAUcEKp3+Hqjg7SBsjQuN\nFlqP5q9Id7iBvd+GaA1TuO8=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-gliue@opsystem-e3df8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-04-14T07:58:41.812Z] [runtime-status] [6925] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-14T07:58:41.812Z] [runtime-status] [6925] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-14T07:58:41.812Z] [runtime-status] [6925] Running api in mode HTTPS 
+[debug] [2020-04-14T07:58:41.817Z] [runtime-status] [6925] Attempting to listen to socketPath: /var/folders/qp/kl2l9mks5j345m3shwkt78p40000gn/T/fire_emu_6925.sock 
+[debug] [2020-04-14T07:58:41.817Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-14T07:58:41.841Z] [runtime-status] [6925] Ephemeral server handling POST request 
+[debug] [2020-04-14T07:58:41.844Z] [runtime-status] [6925] Ephemeral server survived. 
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~2s
+[debug] [2020-04-14T07:58:44.176Z] [worker-api-a9aa71da-cd6c-4b78-87f6-12bae0c7e11a]: IDLE 
+[debug] [2020-04-14T07:58:44.176Z] [work-queue] {"queueLength":0,"workRunningCount":0}
